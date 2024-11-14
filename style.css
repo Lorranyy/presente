@@ -2,7 +2,7 @@
 
 
 :root{
-    --primaria: #;
+    --primaria: #000;
     --secundaria: #;
     --terciaria: #;
     --quaternaria: #;
@@ -11,32 +11,9 @@
  
  body{
     font-family: 'Sour Gummy', sans-serif;
-    overflow-x: hidden;
+    
  }
 
 
 
 
- .todo{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5rem;
- }
- 
- 
- .quadrado{
-    display: flex;
-    justify-content: center;
-    background-color: var(--secundaria);
-    width: 40rem;
-    padding-top: 1rem;
-    border-radius: 8px;
- }
- 
- 
- .ilustracao p{
-    width: 19rem;
-    font-weight: 600;
-    font-size: medium;
-    margin-left: 1.7rem;
- }
