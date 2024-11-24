@@ -1,57 +1,140 @@
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   font-family: sans-serif;
- }
- 
- body {
-   background-color: #fcfbff;
-   display: flex;
-   justify-content: center;
- }
- 
- 
- main {
-   height: 100vh;
-   width: 100%;
-   max-width: 1000px;
-   display: flex;
-   flex-wrap: wrap;
-   align-content: center;
-   justify-content: center;
- }
- 
- span {
-   font-size: x-large;
- }
- 
- img {
-   box-shadow: 0 1px 2px #0003;
-   width: 100%;
- }
- 
- .swiper {
-   height: 500px;
- }
- 
- .swiper-slide {
-   text-align: center;
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
- 
- @media (max-width: 450px) {
-   .swiper {
-     height: 270px;
-   }
- }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Sour Gummy', sans-serif;
+}
+
+body {
+  background-color: #fcfbff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper {
+  width: 100%;
+  height: 500px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.mensagem {
+  text-align: center;
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 800px;
+  background: #fff1f3;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mensagem h2 {
+  font-size: 1.8em;
+  color: #b60c0c;
+}
+
+.mensagem p {
+  font-size: 1.2em;
+  color: #333;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.contador {
+  text-align: center;
+  margin: 20px auto;
+  font-size: 1.5em;
+  color: #6c63ff;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
 
 
 
+audio {
+  width: 100%;
+  border-radius: 10px; /* Arredonda os cantos */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  background-color: #000000; /* Fundo suave */
+  padding: 5px;
+}
 
+/* Personalizar os controles com borda */
+audio::-webkit-media-controls-panel {
+  background-color: #f1efed; /* Cor do fundo dos controles */
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color: #b81010; /* Cor do botão de play */
+}
+
+audio::-webkit-media-controls-volume-slider {
+  background-color: #fffdfc; /* Cor do controle de volume */
+}
+
+/* Ajustes para dispositivos muito pequenos (até 450px) */
+@media (max-width: 450px) {
+  .swiper {
+    height: 50vh; /* Altura reduzida do carrossel */
+  }
+
+  .mensagem h2 {
+    font-size: 1.5em; /* Fonte menor para títulos */
+  }
+
+  .mensagem p {
+    font-size: 1em; /* Fonte menor para o texto */
+  }
+
+  .contador {
+    font-size: 1.2em; /* Ajuste do contador */
+  }
+
+  footer h2 {
+    font-size: 1.2em; /* Reduzir título do footer */
+  }
+}
+
+/* Ajustes para tablets e telas intermediárias (450px a 1024px) */
+@media (min-width: 451px) and (max-width: 1024px) {
+  .swiper {
+    height: 60vh; /* Altura intermediária do carrossel */
+  }
+
+  .mensagem {
+    padding: 20px; /* Espaçamento levemente maior */
+  }
+
+  .mensagem h2 {
+    font-size: 1.6em;
+  }
+
+  .mensagem p {
+    font-size: 1.1em;
+  }
+}

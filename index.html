@@ -5,45 +5,67 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Presente</title>
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-  />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main>
-    <!---SLIDER-->
-    <div class="swiper">
+    <!-- SLIDER -->
+    <div class="swiper" aria-label="Galeria de imagens com controle de navegação">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="project-img">
-              <img src="./img/um.png" alt="Foto 01">
+              <img src="/img/um.jpg" alt="Foto 01">
             </div>
           </div>
           <div class="swiper-slide">
             <div class="project-img">
-              <img src="./img/dois.jpeg" alt="Foto 02">
+              <img src="/img/dois.jpg" alt="Foto 02">
             </div>
           </div>
           <div class="swiper-slide">
             <div class="project-img">
-              <img src="./img/cinco.jpeg" alt="Foto 03">
+              <img src="/img/tres.jpg" alt="Foto 03">
             </div>
           </div>
           <div class="swiper-slide">
             <div class="project-img">
-              <img src="./img/quatro.png" alt="Foto 03">
+              <img src="/img/quatro.jpg" alt="Foto 04">
             </div>
           </div>
           <div class="swiper-slide">
             <div class="project-img">
-              <img src="./img/tres.jpeg" alt="Foto 03">
+              <img src="/img/cinco.jpg" alt="Foto 05">
             </div>
           </div>
           <div class="swiper-slide">
             <div class="project-img">
-              <img src="./img/cinco.jpeg" alt="Foto 03">
+              <img src="/img/seis.jpg" alt="Foto 06">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="/img/sete.jpg" alt="Foto 07">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="/img/oito.jpg" alt="Foto 08">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="/img/nove.jpg" alt="Foto 09">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="/img/dez.jpg" alt="Foto 10">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project-img">
+              <img src="/img/onze.jpg" alt="Foto 11">
             </div>
           </div>
         </div>
@@ -52,9 +74,34 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
+
+    <!-- TEXTO PARA ELA -->
+    <section id="texto" class="mensagem">
+      <h2>Luh e Lorrany 💕</h2>
+      <p>
+        Desde que você entrou na minha vida, tudo ficou mais colorido. Cada momento ao seu lado é único, 
+        e essa página é só um pedacinho de tudo que eu sinto por você. Obrigada por ser quem você é, por 
+        me fazer sorrir e por compartilhar seus dias comigo. Te amo hoje e sempre! ❤️
+      </p>
+    </section>
+
+    <!-- CONTADOR -->
+    <div id="contador" class="contador">
+      <span>Estamos juntas há: <span id="tempo"></span></span>
+    </div>
   </main>
 
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
+  <!-- MÚSICA -->
+  <footer>
+    <h2>Nossa música 🎵</h2>
+    <audio controls>
+      <source src="/audio/ANAVITÓRIA_ Lenine - Lisboa (visualizer)(MP3_160K).mp3" type="audio/mpeg">
+      Seu navegador não suporta o áudio.
+    </audio>
+  </footer>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
