@@ -79,9 +79,10 @@
     <section id="texto" class="mensagem">
       <h2>Luh e Lorrany 💕</h2>
       <p>
-        Desde que você entrou na minha vida, tudo ficou mais colorido. Cada momento ao seu lado é único, 
-        e essa página é só um pedacinho de tudo que eu sinto por você. Obrigada por ser quem você é, por 
-        me fazer sorrir e por compartilhar seus dias comigo. Te amo hoje e sempre! ❤️
+        Meu amor, obrigada por me fazer tão bem todo esse tempo que estamos juntas. Desde o dia em que você entrou na minha
+        vida, sou mais feliz. O mundo é mais colorido com você por perto. Fiz esta página para guardar alguns de nossos
+        momentos e demonstrar um pedacinho do meu amor por você. É simples, mas é de coração. Espero que goste. Eu te amo mais
+        que tudo!❤️
       </p>
     </section>
 
@@ -93,11 +94,16 @@
 
   <!-- MÚSICA -->
   <footer>
-    <h2>Nossa música 🎵</h2>
-    <audio controls>
-      <source src="/audio/ANAVITÓRIA_ Lenine - Lisboa (visualizer)(MP3_160K).mp3" type="audio/mpeg">
-      Seu navegador não suporta o áudio.
-    </audio>
+    <h2>Nossa música especial 🎵</h2>
+    <div class="player">
+      <button id="play-pause" class="play-btn">▶️</button>
+      <span id="current-time">0:00</span>
+      <input type="range" id="seek-bar" value="0" min="0" max="100" step="1">
+      <span id="duration">3:42</span>
+      <button id="mute" class="mute-btn">🔊</button>
+      <input type="range" id="volume-bar" value="100" min="0" max="100" step="1">
+    </div>
+    <audio id="audio" src="/audio/ANAVITÓRIA_ Lenine - Lisboa (visualizer)(MP3_160K).mp3"></audio>
   </footer>
 
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

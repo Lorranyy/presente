@@ -60,13 +60,14 @@ img {
   color: #333;
   margin-top: 10px;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .contador {
   text-align: center;
   margin: 20px auto;
   font-size: 1.5em;
-  color: #6c63ff;
+  color: #b60c0c;
 }
 
 footer {
@@ -76,27 +77,68 @@ footer {
 
 
 
+/* Estilo para o player de música */
 audio {
-  width: 100%;
-  border-radius: 10px; /* Arredonda os cantos */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  background-color: #000000; /* Fundo suave */
-  padding: 5px;
+  display: block;
+  margin: 20px auto;
+  width: 90%; /* Ajustável conforme necessário */
+  max-width: 600px;
+  background-color: #fcfbff; /* Cor de fundo clara e suave */
+  border: 2px solid #e50914; /* Borda vermelha */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+  padding: 10px;
 }
 
-/* Personalizar os controles com borda */
+/* Personalização dos controles do áudio */
 audio::-webkit-media-controls-panel {
-  background-color: #f1efed; /* Cor do fundo dos controles */
+  background-color: #fcfbff; /* Fundo leve e suave */
+  border-radius: 10px;
 }
 
-audio::-webkit-media-controls-play-button {
-  background-color: #b81010; /* Cor do botão de play */
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-next-track-button,
+audio::-webkit-media-controls-previous-track-button {
+  background-color: #e50914; /* Botões em vermelho */
+  border-radius: 50%;
+  color: white; /* Ícones brancos */
+}
+
+audio::-webkit-media-controls-timeline {
+  background: #e50914; /* Linha de progresso em vermelho */
+  height: 5px;
+  border-radius: 5px;
 }
 
 audio::-webkit-media-controls-volume-slider {
-  background-color: #fffdfc; /* Cor do controle de volume */
+  background: #e50914; /* Vermelho para o controle de volume */
+  height: 5px;
+  border-radius: 5px;
 }
 
+/* Estilo para o controle de volume */
+audio::-webkit-media-controls-volume-slider::-webkit-slider-thumb {
+  background-color: #fff; /* Branco para o botão do controle */
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+audio::-webkit-media-controls-volume-slider::-webkit-slider-runnable-track {
+  background: #e50914; /* Barra de volume em vermelho */
+}
+
+/* Estilo adicional para quando o mouse passa sobre os controles */
+audio::-webkit-media-controls-play-button:hover,
+audio::-webkit-media-controls-next-track-button:hover,
+audio::-webkit-media-controls-previous-track-button:hover {
+  background-color: #ff1f1f; /* Vermelho mais intenso ao passar o mouse */
+}
+
+audio::-webkit-media-controls-timeline:hover {
+  background: #ff1f1f; /* Linha de progresso mais intensa ao passar o mouse */
+}
 /* Ajustes para dispositivos muito pequenos (até 450px) */
 @media (max-width: 450px) {
   .swiper {
