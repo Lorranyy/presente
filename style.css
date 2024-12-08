@@ -83,7 +83,7 @@ audio {
   margin: 20px auto;
   width: 90%; /* Ajustável conforme necessário */
   max-width: 600px;
-  background-color: #fcfbff; /* Cor de fundo clara e suave */
+  background-color: #f1f1ff; /* Cor de fundo clara e suave */
   border: 2px solid #e50914; /* Borda vermelha */
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
@@ -91,8 +91,21 @@ audio {
 }
 
 /* Personalização dos controles do áudio */
+.player {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff1f3;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: rgb(2, 2, 2);
+  font-family: Arial, sans-serif;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 audio::-webkit-media-controls-panel {
-  background-color: #fcfbff; /* Fundo leve e suave */
+  background-color: #fff1f3; /* Fundo leve e suave */
   border-radius: 10px;
 }
 
